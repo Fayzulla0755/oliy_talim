@@ -4,28 +4,18 @@ nav.navbar.navbar-dark.bg-dark
     a.navbar-brand(href='/create') Malumotlarni qo'shish
     a.navbar-brand(href='#') Malumotlar bilan tanishish 
     a.navbar-brand(href='#') Shaxsiy kabinet
-    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarScroll' aria-controls='navbarScroll' aria-expanded='false' aria-label='Toggle navigation')
-      span.navbar-toggler-icon
-    #navbarScroll.collapse.navbar-collapse 
-      ul.navbar-nav.me-auto.my-2.my-lg-0.d-inline.float-left.navbar-nav-scroll(style='--bs-scroll-height: 100px;')
-        li.nav-item
-          a.nav-link.active(aria-current='page' href='#') Home
-        li.nav-item
-          a.nav-link(href='#') Link
-        li.nav-item.dropdown
-          a#navbarScrollingDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
-            | Link
-          ul.dropdown-menu(aria-labelledby='navbarScrollingDropdown')
-            li
-              a.dropdown-item(href='#') Action
-            li
-              a.dropdown-item(href='#') Another action
-            li
-              hr.dropdown-divider
-            li
-              a.dropdown-item(href='#') Something else here
-        li.nav-item
-          a.nav-link.disabled(href='#' tabindex='-1' aria-disabled='true') Link
-      form.d-flex
-        input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
-        button.btn.btn-outline-success(type='submit') Search
+    a#navbarScrollingDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+      | Link
+    ul.dropdown-menu(aria-labelledby='navbarScrollingDropdown')
+      li
+        a.dropdown-item(href='/unversted') Unverstedlar
+      li
+        a.dropdown-item(href='/fakulted') Fakultetlar
+      li
+        a.dropdown-item(href='/gruh') Gruhlar
+      li
+        a.dropdown-item(href='/fan_oqtuvchilari') Fan O'qtuvchilari 
+      li
+        a.dropdown-item(href='/talaba_fan') Talaba Fanlar bo'yicha
+      li
+        a.dropdown-item(href='/talaba_sh') Talaba Shaxsiy

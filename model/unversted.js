@@ -11,7 +11,7 @@ const unversted = new schema({
         type:String,
         required:true
     },
-    manzil:{
+    lmanzi:{
         type:String,
         default:"Talabalar soni berilmagan"
     },

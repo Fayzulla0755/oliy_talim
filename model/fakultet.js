@@ -13,7 +13,7 @@ const fakultet=new schema({
         type:Number
         
     },
-    // malumotlarni qo'shish
+  
     malumot:{
         type:String
     },

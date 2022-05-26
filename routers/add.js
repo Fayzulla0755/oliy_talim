@@ -29,13 +29,13 @@ router.post("/create/unversted",(req,res)=>{
     })
 })
 router.post("/create/fakultet",(req,res)=>{
-    const {ID,fakultet_nomi,talabalar_soni,malumot,unversted_id}=req.body
+    const {ID,fakultet_nomi,talabalar_soni,malumot,unversitsed_id}=req.body
     const db= new fakultet({
         ID:ID,
         fakultet_nomi:fakultet_nomi,
         talabalar_soni:talabalar_soni,
         malumot:malumot,
-        unversted_id:unversted_id
+        unversitsed_id:unversitsed_id
     })
     db.save().then(data=>{
         res.json(data)
